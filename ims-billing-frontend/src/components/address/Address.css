@@ -1,0 +1,374 @@
+.address-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Table Cell Styles */
+  .address-line-cell {
+    line-height: 1.4;
+    color: var(--bs-dark);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .city-info-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .city-info-cell .city-name {
+    font-weight: 600;
+    color: var(--bs-primary);
+    font-size: 0.9rem;
+  }
+  
+  .city-info-cell .pin-code {
+    font-size: 0.8rem;
+    color: var(--bs-secondary);
+    font-family: 'Courier New', monospace;
+    background: var(--bs-light);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+  }
+  
+  .full-address-cell {
+    font-size: 0.85rem;
+  }
+  
+  .address-preview {
+    background: var(--bs-light);
+    padding: 0.5rem;
+    border-radius: var(--bs-border-radius);
+    border-left: 3px solid var(--bs-warning);
+  }
+  
+  .address-preview .address-line {
+    margin-bottom: 0.2rem;
+    color: var(--bs-dark);
+  }
+  
+  .address-preview .address-line.secondary {
+    color: var(--bs-secondary);
+    font-size: 0.9em;
+  }
+  
+  .address-preview .city-line {
+    margin-top: 0.3rem;
+    font-weight: 500;
+  }
+  
+  .address-preview .city {
+    color: var(--bs-primary);
+  }
+  
+  .address-preview .pin {
+    color: var(--bs-info);
+    font-family: 'Courier New', monospace;
+  }
+  
+  /* Form Styles */
+  .address-form {
+    max-width: 800px;
+  }
+  
+  .form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(248, 249, 250, 0.5);
+    border-radius: var(--bs-border-radius-lg);
+    border-left: 4px solid var(--bs-warning);
+  }
+  
+  .section-title {
+    color: var(--bs-warning);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .new-city-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(52, 152, 219, 0.05);
+    border-radius: var(--bs-border-radius);
+    border: 1px solid rgba(52, 152, 219, 0.2);
+  }
+  
+  .new-city-title {
+    color: var(--bs-info);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .selected-city-info {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(39, 174, 96, 0.05);
+    border-radius: var(--bs-border-radius);
+    border: 1px solid rgba(39, 174, 96, 0.2);
+  }
+  
+  .selected-city-title {
+    color: var(--bs-success);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .city-info-card {
+    background: white;
+    border-radius: var(--bs-border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .city-info-header {
+    background: linear-gradient(135deg, var(--bs-success), #27ae60);
+    color: white;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .city-info-body {
+    padding: 1rem;
+  }
+  
+  .city-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .city-detail .label {
+    font-weight: 500;
+    color: var(--bs-secondary);
+    min-width: 80px;
+  }
+  
+  .city-detail .value {
+    font-weight: 600;
+    color: var(--bs-dark);
+    text-align: right;
+    flex: 1;
+  }
+  
+  .city-detail .value.description {
+    font-style: italic;
+    text-align: left;
+    margin-left: 1rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--bs-light);
+  }
+  
+  /* View Mode Styles */
+  .address-view .view-field {
+    margin-bottom: 1.5rem;
+  }
+  
+  .address-view .view-field label {
+    font-weight: 600;
+    color: var(--bs-secondary);
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .address-view .view-value {
+    background: var(--bs-light);
+    padding: 0.75rem 1rem;
+    border-radius: var(--bs-border-radius);
+    border-left: 3px solid var(--bs-warning);
+    font-size: 1rem;
+    color: var(--bs-dark);
+  }
+  
+  .address-view .view-value.address-id {
+    font-weight: 600;
+    color: var(--bs-secondary);
+    background: rgba(149, 165, 166, 0.1);
+    border-left-color: var(--bs-secondary);
+  }
+  
+  .address-view .view-value.address-line {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .address-view .view-value.city-id {
+    font-weight: 600;
+    color: var(--bs-info);
+    background: rgba(52, 152, 219, 0.1);
+    border-left-color: var(--bs-info);
+  }
+  
+  .address-view .view-value.city-name {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--bs-primary);
+  }
+  
+  .address-view .view-value.pin-code {
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: var(--bs-info);
+    background: rgba(52, 152, 219, 0.1);
+    border-left-color: var(--bs-info);
+  }
+  
+  .address-view .view-value.city-description {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+    font-style: italic;
+    color: var(--bs-secondary);
+  }
+  
+  .address-view .view-value.complete-address {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .address-section,
+  .city-section {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--bs-light);
+  }
+  
+  .address-section .section-title {
+    color: var(--bs-warning);
+  }
+  
+  .city-section .section-title {
+    color: var(--bs-info);
+  }
+  
+  /* Complete Address Card */
+  .complete-address-card {
+    background: white;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(243, 156, 18, 0.2);
+  }
+  
+  .address-header {
+    background: linear-gradient(135deg, var(--bs-warning), #e67e22);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .address-body {
+    padding: 1.2rem;
+  }
+  
+  .address-line-item {
+    margin-bottom: 0.5rem;
+    color: var(--bs-dark);
+    font-weight: 500;
+  }
+  
+  .address-line-item.secondary {
+    color: var(--bs-secondary);
+    font-weight: 400;
+  }
+  
+  .city-line-item {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bs-light);
+    font-weight: 600;
+  }
+  
+  .city-part {
+    color: var(--bs-primary);
+  }
+  
+  .pin-part {
+    color: var(--bs-info);
+    font-family: 'Courier New', monospace;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .address-container {
+      padding: 0 0.5rem;
+    }
+    
+    .form-section {
+      padding: 1rem;
+    }
+    
+    .city-info-cell {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+    
+    .address-preview {
+      padding: 0.3rem;
+    }
+    
+    .city-detail {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+    
+    .city-detail .value {
+      text-align: left;
+      margin-left: 0;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .form-actions .btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title {
+      font-size: 1rem;
+    }
+    
+    .address-line-cell {
+      font-size: 0.85rem;
+    }
+    
+    .full-address-cell {
+      font-size: 0.8rem;
+    }
+  }
+  

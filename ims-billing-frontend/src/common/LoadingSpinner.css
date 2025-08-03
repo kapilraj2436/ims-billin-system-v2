@@ -1,0 +1,66 @@
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .loading-content {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: var(--bs-box-shadow-lg);
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  .loading-container {
+    padding: 3rem 1rem;
+  }
+  
+  .loading-text {
+    color: var(--bs-secondary);
+    font-weight: 500;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .spinner-border {
+    border-width: 3px;
+    animation: customSpin 1s linear infinite;
+  }
+  
+  @keyframes customSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Pulse animation for skeleton loading */
+  .loading-skeleton {
+    background: linear-gradient(
+      90deg,
+      var(--bs-light) 25%,
+      rgba(236, 240, 241, 0.6) 50%,
+      var(--bs-light) 75%
+    );
+    background-size: 200% 100%;
+    animation: loading-pulse 1.5s infinite;
+  }
+  
+  @keyframes loading-pulse {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  

@@ -1,0 +1,187 @@
+/* Bootstrap Custom Theme */
+:root {
+    --bs-primary: #2c3e50;
+    --bs-secondary: #95a5a6;
+    --bs-success: #27ae60;
+    --bs-info: #3498db;
+    --bs-warning: #f39c12;
+    --bs-danger: #e74c3c;
+    --bs-light: #ecf0f1;
+    --bs-dark: #2c3e50;
+    
+    --bs-primary-rgb: 44, 62, 80;
+    --bs-secondary-rgb: 149, 165, 166;
+    --bs-success-rgb: 39, 174, 96;
+    --bs-info-rgb: 52, 152, 219;
+    --bs-warning-rgb: 243, 156, 18;
+    --bs-danger-rgb: 231, 76, 60;
+    --bs-light-rgb: 236, 240, 241;
+    --bs-dark-rgb: 44, 62, 80;
+  
+    --bs-font-sans-serif: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bs-border-radius: 8px;
+    --bs-border-radius-sm: 6px;
+    --bs-border-radius-lg: 12px;
+    --bs-box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --bs-box-shadow-lg: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Custom Button Styles */
+  .btn {
+    border-radius: var(--bs-border-radius);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: var(--bs-box-shadow-sm);
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--bs-box-shadow);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, var(--bs-primary), #34495e);
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #1a252f, var(--bs-primary));
+  }
+  
+  .btn-outline-primary {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+  }
+  
+  .btn-outline-primary:hover {
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  /* Custom Card Styles */
+  .card {
+    border: none;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: var(--bs-box-shadow);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--bs-box-shadow-lg);
+  }
+  
+  .card-header {
+    background: linear-gradient(135deg, var(--bs-light), #ffffff);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+    color: var(--bs-dark);
+  }
+  
+  /* Custom Form Styles */
+  .form-control {
+    border-radius: var(--bs-border-radius);
+    border: 2px solid var(--bs-light);
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: var(--bs-info);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+  }
+  
+  .form-select {
+    border-radius: var(--bs-border-radius);
+    border: 2px solid var(--bs-light);
+  }
+  
+  .form-select:focus {
+    border-color: var(--bs-info);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+  }
+  
+  /* Custom Table Styles */
+  .table {
+    border-radius: var(--bs-border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--bs-box-shadow);
+  }
+  
+  .table thead th {
+    background: linear-gradient(135deg, var(--bs-primary), #34495e);
+    color: white;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .table tbody tr {
+    transition: all 0.3s ease;
+  }
+  
+  .table tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+    transform: scale(1.01);
+  }
+  
+  /* Custom Modal Styles */
+  .modal-content {
+    border: none;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: var(--bs-box-shadow-lg);
+  }
+  
+  .modal-header {
+    background: linear-gradient(135deg, var(--bs-primary), #34495e);
+    color: white;
+    border-bottom: none;
+  }
+  
+  .modal-header .btn-close {
+    filter: invert(1);
+  }
+  
+  /* Custom Badge Styles */
+  .badge {
+    border-radius: var(--bs-border-radius);
+    font-weight: 500;
+  }
+  
+  /* Custom Alert Styles */
+  .alert {
+    border: none;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: var(--bs-box-shadow-sm);
+  }
+  
+  /* Loading Animation */
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
+  .loading {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  /* Responsive Utilities */
+  @media (max-width: 768px) {
+    .btn {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+    
+    .card {
+      margin-bottom: 1rem;
+    }
+    
+    .table-responsive {
+      font-size: 0.875rem;
+    }
+  }
+  

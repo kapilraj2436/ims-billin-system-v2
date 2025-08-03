@@ -1,0 +1,330 @@
+.city-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Table Cell Styles */
+  .city-name-cell {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--bs-primary);
+  }
+  
+  .pin-code-badge {
+    background: linear-gradient(135deg, var(--bs-info), #3498db);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3);
+  }
+  
+  .description-cell {
+    line-height: 1.4;
+    color: var(--bs-secondary);
+    font-size: 0.9rem;
+  }
+  
+  .location-summary {
+    background: var(--bs-light);
+    border-radius: var(--bs-border-radius);
+    padding: 0.5rem;
+  }
+  
+  .city-pin-combo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .city-text {
+    font-weight: 600;
+    color: var(--bs-primary);
+    font-size: 0.9rem;
+  }
+  
+  .pin-text {
+    font-size: 0.8rem;
+    color: var(--bs-secondary);
+    font-family: 'Courier New', monospace;
+  }
+  
+  /* Form Styles */
+  .city-form {
+    max-width: 600px;
+  }
+  
+  .form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(248, 249, 250, 0.5);
+    border-radius: var(--bs-border-radius-lg);
+    border-left: 4px solid var(--bs-info);
+  }
+  
+  .section-title {
+    color: var(--bs-info);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .form-text {
+    font-size: 0.8rem;
+    color: var(--bs-secondary);
+    margin-top: 0.25rem;
+  }
+  
+  /* Preview Section */
+  .preview-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(52, 152, 219, 0.05);
+    border-radius: var(--bs-border-radius);
+    border: 1px solid rgba(52, 152, 219, 0.2);
+  }
+  
+  .preview-title {
+    color: var(--bs-info);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .preview-card {
+    background: white;
+    border-radius: var(--bs-border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .preview-header {
+    background: linear-gradient(135deg, var(--bs-info), #3498db);
+    color: white;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .preview-body {
+    padding: 1rem;
+  }
+  
+  .preview-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .preview-item .label {
+    font-weight: 500;
+    color: var(--bs-secondary);
+  }
+  
+  .preview-item .value {
+    font-weight: 600;
+    color: var(--bs-primary);
+    font-family: 'Courier New', monospace;
+  }
+  
+  .preview-description {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bs-light);
+    color: var(--bs-dark);
+    line-height: 1.5;
+    font-style: italic;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--bs-light);
+  }
+  
+  /* View Mode Styles */
+  .city-view .view-field {
+    margin-bottom: 1.5rem;
+  }
+  
+  .city-view .view-field label {
+    font-weight: 600;
+    color: var(--bs-secondary);
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .city-view .view-value {
+    background: var(--bs-light);
+    padding: 0.75rem 1rem;
+    border-radius: var(--bs-border-radius);
+    border-left: 3px solid var(--bs-info);
+    font-size: 1rem;
+    color: var(--bs-dark);
+  }
+  
+  .city-view .view-value.city-id {
+    font-weight: 600;
+    color: var(--bs-secondary);
+    background: rgba(149, 165, 166, 0.1);
+    border-left-color: var(--bs-secondary);
+  }
+  
+  .city-view .view-value.pin-code-display {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: var(--bs-info);
+    background: rgba(52, 152, 219, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .city-view .view-value.city-name-large {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--bs-primary);
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.1), rgba(52, 73, 94, 0.1));
+    display: flex;
+    align-items: center;
+  }
+  
+  .city-view .view-value.city-description-full {
+    line-height: 1.6;
+    background: rgba(243, 156, 18, 0.1);
+    border-left-color: var(--bs-warning);
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .city-view .view-value.city-summary {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  /* Summary Card */
+  .summary-card {
+    background: white;
+    border-radius: var(--bs-border-radius-lg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(52, 152, 219, 0.2);
+  }
+  
+  .summary-header {
+    background: linear-gradient(135deg, var(--bs-info), #3498db);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  .summary-body {
+    padding: 1.2rem;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--bs-light);
+  }
+  
+  .summary-item .label {
+    font-weight: 500;
+    color: var(--bs-secondary);
+  }
+  
+  .summary-item .value {
+    font-weight: 700;
+    color: var(--bs-info);
+    font-family: 'Courier New', monospace;
+    background: rgba(52, 152, 219, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+  }
+  
+  .summary-description {
+    color: var(--bs-dark);
+    line-height: 1.6;
+    font-style: italic;
+    background: var(--bs-light);
+    padding: 1rem;
+    border-radius: var(--bs-border-radius);
+    border-left: 3px solid var(--bs-warning);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .city-container {
+      padding: 0 0.5rem;
+    }
+    
+    .form-section {
+      padding: 1rem;
+    }
+    
+    .city-pin-combo {
+      align-items: center;
+    }
+    
+    .preview-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+    
+    .summary-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .form-actions .btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .city-name-cell {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+    
+    .pin-code-badge {
+      padding: 0.2rem 0.6rem;
+      font-size: 0.8rem;
+    }
+    
+    .section-title {
+      font-size: 1rem;
+    }
+    
+    .city-view .view-value.city-name-large {
+      font-size: 1.1rem;
+    }
+  }
+  
